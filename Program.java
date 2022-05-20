@@ -4,14 +4,26 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		//Calcule a idade de uma pessoa de acordo com a data de nascimento dela. Você deve solicitar dia, mês e ano.
+		/* 
+		 * Considere um programa que deve classificar um número como par ou ímpar e, além disso, 
+		 * classificar ele como menor do que 100 ou maior ou igual a 100. 
+		 * Escreva um programa que faça essa classificação corretamente.*/
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Informe da data do seu nascimento dd/MM/yyyy: ");
-		String dataNascimento = sc.next();
-		int ano = Integer.parseInt(dataNascimento.substring(6));
-		System.out.println("Você tem " + (2022 - ano) + " anos" ); //Tem que contabilizar os meses tbm
+		int numero = sc.nextInt();
+		
+		if(numero % 2 == 0) {
+			System.out.println("O número digitado é par!");
+		} else {
+			System.out.println("O número digitado é impar!");
+		}
+		
+		String validar = numero >= 100 ? "Maior ou igual a 100!" : "Menor que 100!";
+		System.out.println(validar);
+		
+		
+		
 		
 		sc.close();
 	}
