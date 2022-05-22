@@ -27,20 +27,24 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("How much do you earn per hour?");
-		double earnPerHour = sc.nextDouble();
-		System.out.println("How much hours work per month");
-		int hoursWorkPerMonth = sc.nextInt();
 		
-		double salarioBruto = earnPerHour * hoursWorkPerMonth;
-		double inss = salarioBruto * 0.08;
-		double sindicato = salarioBruto * 0.11;
-		double salarioLiquido = salarioBruto - inss - sindicato;
+		int numero = 3;
+		int[] vect = new int[numero];
 		
-		System.out.println("Salario Bruto: R$ " + String.format("%.2f", salarioBruto));
-		System.out.println("INSS: R$ " + String.format("%.2f", inss));
-		System.out.println("Sindicato: R$ " + String.format("%.2f", sindicato));
-		System.out.println("Salario Liquido: R$ " + String.format("%.2f", salarioLiquido));
+		for(int i = 0; i < vect.length; i++) {
+			vect[i] = sc.nextInt();
+		}
+		
+		for(int vect2 : vect) {
+			System.out.print(vect2 + " ");
+		}
+		
+		
+			if(vect[0] > vect [1]) {
+				System.out.println("Ordem decresente");
+			}else {
+				System.out.println("Ordem crescente");
+			}
 		
 
 		sc.close();
