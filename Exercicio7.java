@@ -13,11 +13,17 @@ public class Exercicio7 {
 		
 		System.out.print("Numero ");
 		if(numero > 0) {
-			System.out.println("Positivo");
+			System.out.print("Positivo");
 		}else if(numero < 0) {
-			System.out.println("Negativo");
+			System.out.print("Negativo");
 		}else {
-			System.out.println("Neutro");
+			System.out.print("Neutro");
+		}
+		
+		if(numero % 2 == 0) {
+			System.out.println(" e é Par");
+		}else {
+			System.out.println(" e é Impar");
 		}
 		
 		sc.close();
